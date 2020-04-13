@@ -23,7 +23,7 @@ app.get('/getInformation/:informationName', (req, res, next) => {
     .model(req.params.informationName.toLowerCase())
     .find()
     // result.information yields a Kowalski.Information instance
-    .then(results => results.map(result => result.information)) 
+    .then(results => results.map(result => result.getInformation())) 
     .then(results => res.json(results))
     .catch(error => next(error))
 })
