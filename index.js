@@ -51,7 +51,7 @@ function mongooseStorage (url) {
      */
     _write (information, encoding, done) {
       const Model = this.mongoose.model(information.constructor.name.toLowerCase())
-      Model.create(information.data, error => error ? done(error) : done())
+      Model.create(information.getData(), error => error ? done(error) : done())
     }
   }
 
