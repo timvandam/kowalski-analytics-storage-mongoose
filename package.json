@@ -7,6 +7,7 @@
   "author": "Tim van Dam <timvandamcs@gmail.com>",
   "license": "MIT",
   "dependencies": {
+    "kowalski-analytics": "^0.0.1",
     "mongoose": "^5.9.7"
   }
 }
